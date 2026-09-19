@@ -170,6 +170,10 @@ st.markdown(
     """
     <style>
 
+    /* ========================================================
+       GLOBAL
+       ======================================================== */
+
     .stApp {
         background-color: #FFFFFF;
         color: #1F2937;
@@ -181,10 +185,192 @@ st.markdown(
         padding-bottom: 3rem;
     }
 
+
+    /* ========================================================
+       SIDEBAR
+       ======================================================== */
+
     section[data-testid="stSidebar"] {
-        background-color: #F5F9FF;
+        background-color: #F5F9FF !important;
         border-right: 1px solid #DDE7F2;
     }
+
+    section[data-testid="stSidebar"] > div {
+        background-color: #F5F9FF !important;
+    }
+
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3 {
+        color: #123B6D !important;
+    }
+
+    section[data-testid="stSidebar"] p {
+        color: #475569 !important;
+    }
+
+    section[data-testid="stSidebar"] label {
+        color: #334155 !important;
+    }
+
+    section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] {
+        color: #64748B !important;
+    }
+
+    section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] p {
+        color: #64748B !important;
+    }
+
+
+    /* ========================================================
+       TEXT INPUT
+       ======================================================== */
+
+    section[data-testid="stSidebar"] div[data-baseweb="input"] {
+        background-color: #FFFFFF !important;
+        border-radius: 7px !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-baseweb="input"] > div {
+        background-color: #FFFFFF !important;
+    }
+
+    section[data-testid="stSidebar"] input {
+        background-color: #FFFFFF !important;
+        color: #1F2937 !important;
+        -webkit-text-fill-color: #1F2937 !important;
+    }
+
+    section[data-testid="stSidebar"] input::placeholder {
+        color: #94A3B8 !important;
+        -webkit-text-fill-color: #94A3B8 !important;
+    }
+
+
+    /* ========================================================
+       DISABLED TEXT INPUT
+       ======================================================== */
+
+    section[data-testid="stSidebar"] input:disabled {
+        background-color: #EEF4FA !important;
+        color: #475569 !important;
+        -webkit-text-fill-color: #475569 !important;
+        opacity: 1 !important;
+    }
+
+    section[data-testid="stSidebar"]
+    div[data-baseweb="input"]:has(input:disabled) {
+        background-color: #EEF4FA !important;
+    }
+
+
+    /* ========================================================
+       TEXT AREA
+       ======================================================== */
+
+    section[data-testid="stSidebar"] textarea {
+        background-color: #FFFFFF !important;
+        color: #1F2937 !important;
+        -webkit-text-fill-color: #1F2937 !important;
+        border-radius: 7px !important;
+    }
+
+    section[data-testid="stSidebar"] textarea::placeholder {
+        color: #94A3B8 !important;
+        -webkit-text-fill-color: #94A3B8 !important;
+    }
+
+
+    /* ========================================================
+       SELECTBOX / MULTISELECT
+       ======================================================== */
+
+    section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+        background-color: #FFFFFF !important;
+        color: #1F2937 !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-baseweb="select"] span {
+        color: #1F2937 !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-baseweb="tag"] {
+        background-color: #E7F0FB !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-baseweb="tag"] span {
+        color: #123B6D !important;
+    }
+
+
+    /* ========================================================
+       NUMBER INPUT
+       ======================================================== */
+
+    section[data-testid="stSidebar"] [data-testid="stNumberInput"] input {
+        background-color: #FFFFFF !important;
+        color: #1F2937 !important;
+        -webkit-text-fill-color: #1F2937 !important;
+    }
+
+    section[data-testid="stSidebar"]
+    [data-testid="stNumberInput"] button {
+        background-color: #F1F5F9 !important;
+        color: #334155 !important;
+    }
+
+
+    /* ========================================================
+       CHECKBOX
+       ======================================================== */
+
+    section[data-testid="stSidebar"] [data-testid="stCheckbox"] label {
+        color: #334155 !important;
+    }
+
+
+    /* ========================================================
+       EXPANDER
+       ======================================================== */
+
+    section[data-testid="stSidebar"] details {
+        background-color: #FFFFFF !important;
+        border: 1px solid #DDE7F2 !important;
+        border-radius: 7px !important;
+    }
+
+    section[data-testid="stSidebar"] details summary {
+        color: #1F3F64 !important;
+    }
+
+    section[data-testid="stSidebar"] details summary p {
+        color: #1F3F64 !important;
+        font-weight: 600 !important;
+    }
+
+
+    /* ========================================================
+       SLIDER
+       ======================================================== */
+
+    section[data-testid="stSidebar"] [data-testid="stSlider"] {
+        color: #334155 !important;
+    }
+
+
+    /* ========================================================
+       DIVIDER
+       ======================================================== */
+
+    section[data-testid="stSidebar"] hr {
+        border: none;
+        border-top: 1px solid #DDE7F2;
+    }
+
+
+    /* ========================================================
+       TYPOGRAPHY
+       ======================================================== */
 
     h1 {
         color: #123B6D;
@@ -204,6 +390,11 @@ st.markdown(
         font-weight: 650 !important;
     }
 
+
+    /* ========================================================
+       METRICS
+       ======================================================== */
+
     div[data-testid="stMetric"] {
         background-color: #F8FBFF;
         border: 1px solid #DCE8F5;
@@ -219,41 +410,108 @@ st.markdown(
         color: #123B6D;
     }
 
+
+    /* ========================================================
+       PRIMARY BUTTON
+       ======================================================== */
+
     div.stButton > button[kind="primary"] {
-        background-color: #0B5ED7;
-        border: none;
-        color: white;
+        background-color: #0B5ED7 !important;
+        border: 1px solid #0B5ED7 !important;
+        color: #FFFFFF !important;
         min-height: 44px;
-        border-radius: 6px;
+        border-radius: 7px;
         font-weight: 600;
     }
 
     div.stButton > button[kind="primary"]:hover {
-        background-color: #084298;
-        color: white;
+        background-color: #084298 !important;
+        border-color: #084298 !important;
+        color: #FFFFFF !important;
     }
 
+    div.stButton > button[kind="primary"] p {
+        color: #FFFFFF !important;
+    }
+
+
+    /* ========================================================
+       SECONDARY BUTTON
+       ======================================================== */
+
+    div.stButton > button[kind="secondary"] {
+        background-color: #FFFFFF !important;
+        color: #334155 !important;
+        border: 1px solid #CBD5E1 !important;
+        border-radius: 7px;
+        min-height: 42px;
+    }
+
+    div.stButton > button[kind="secondary"]:hover {
+        border-color: #0B5ED7 !important;
+        color: #0B5ED7 !important;
+        background-color: #F8FBFF !important;
+    }
+
+    div.stButton > button[kind="secondary"] p {
+        color: inherit !important;
+    }
+
+
+    /* ========================================================
+       DOWNLOAD BUTTON
+       ======================================================== */
+
     div.stDownloadButton > button {
-        border: 1px solid #0B5ED7;
-        background-color: white;
-        color: #0B5ED7;
-        border-radius: 6px;
+        border: 1px solid #0B5ED7 !important;
+        background-color: #FFFFFF !important;
+        color: #0B5ED7 !important;
+        border-radius: 7px;
     }
 
     div.stDownloadButton > button:hover {
-        background-color: #EFF6FF;
-        color: #084298;
+        background-color: #EFF6FF !important;
+        color: #084298 !important;
     }
+
+
+    /* ========================================================
+       DATAFRAME
+       ======================================================== */
 
     div[data-testid="stDataFrame"] {
         border: 1px solid #E2E8F0;
         border-radius: 6px;
     }
 
+
+    /* ========================================================
+       TABS
+       ======================================================== */
+
+    button[data-baseweb="tab"] {
+        color: #475569 !important;
+    }
+
+    button[data-baseweb="tab"][aria-selected="true"] {
+        color: #0B5ED7 !important;
+        font-weight: 600 !important;
+    }
+
+
+    /* ========================================================
+       MAIN DIVIDER
+       ======================================================== */
+
     hr {
         border: none;
         border-top: 1px solid #E2E8F0;
     }
+
+
+    /* ========================================================
+       STREAMLIT CHROME
+       ======================================================== */
 
     #MainMenu {
         visibility: hidden;
@@ -271,7 +529,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 # ============================================================
 # 10. SESSION STATE
