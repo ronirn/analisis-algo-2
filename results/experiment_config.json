@@ -1,0 +1,47 @@
+{
+    "dataset": "diabetes.csv",
+    "target": "Diabetes_binary",
+    "rows": 70692,
+    "features": 21,
+    "data_sizes": [
+        1000,
+        5000,
+        10000
+    ],
+    "trials": 1,
+    "test_size": 10000,
+    "random_seed": 42,
+    "algorithms": [
+        "SVM",
+        "CNN",
+        "Random Forest",
+        "XGBoost",
+        "Naive Bayes"
+    ],
+    "standard_scaler": true,
+    "warmup": true,
+    "warmup_size": 500,
+    "parameters": {
+        "cpu_threads": 1,
+        "svm_kernel": "rbf",
+        "svm_c": 1.0,
+        "svm_gamma": "scale",
+        "svm_cache": 1000.0,
+        "rf_estimators": 100,
+        "rf_max_depth": 0,
+        "xgb_estimators": 100,
+        "xgb_max_depth": 6,
+        "xgb_learning_rate": 0.1,
+        "xgb_subsample": 1.0,
+        "xgb_colsample": 1.0,
+        "nb_var_smoothing": 1e-09,
+        "cnn_epochs": 10,
+        "cnn_batch_size": 64,
+        "cnn_filters_1": 32,
+        "cnn_filters_2": 64,
+        "cnn_dense_units": 64,
+        "cnn_dropout": 0.0,
+        "cnn_learning_rate": 0.001
+    },
+    "timestamp": "2026-09-19T16:52:04.153347"
+}
