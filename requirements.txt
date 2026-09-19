@@ -3,5 +3,6 @@ pandas
 numpy
 scikit-learn
 xgboost
-tensorflow
+tensorflow==2.20.0
+protobuf>=5.28,<6
 matplotlib
