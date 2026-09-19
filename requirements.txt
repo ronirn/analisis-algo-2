@@ -4,5 +4,4 @@ numpy
 scikit-learn
 xgboost
 tensorflow==2.20.0
-protobuf>=5.28,<6
 matplotlib
